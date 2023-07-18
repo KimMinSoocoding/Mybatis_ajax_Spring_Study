@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;day24_shop_MVC2&apos;&#x0A;- Original project: &apos;day24_shop_MVC2&apos;&#x0A;- Original elements:&#x0A;     cos.jar&#x0A;     ojdbc6.jar&#x0A;     taglibs-standard-impl-1.2.5.jar&#x0A;     taglibs-standard-spec-1.2.5.jar" description="Delete elements" element1="src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" element2="src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" element3="src/main/webapp/WEB-INF/lib/ojdbc6.jar" element4="src/main/webapp/WEB-INF/lib/cos.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="4" stamp="1668144103502" subPackages="false" version="1.0"/>
+</session>

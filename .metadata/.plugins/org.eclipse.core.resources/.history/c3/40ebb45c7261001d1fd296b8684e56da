@@ -1,0 +1,5 @@
+package ez.web.command;
+
+public interface shopCommand {
+
+}

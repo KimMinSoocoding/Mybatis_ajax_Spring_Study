@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- 
+	파일 업로드 : 클라이언트가 브라우저를 통해서 서버로 파일을 전송하는 것
+				(프로필 사진 등록, 첨부파일 등록...)
+	<파일 업로드시 사용될 라이브러리 다운로드>
+	http://www.servlets.com 
+	COS file Upload Library -> cos-22.5.zip
+	압축풀고 lib/cos.jar을 lib안에 붙여넣기 
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function send(frm){
+		var title = frm.title.value.trim();
+		var img = frm.image.value.trim();
+		
+		if(title == "") {
+			alert("제목을 입력하세요!!");
+			return
+		}
+		if(img == ""){
+			alert("파일을 첨부하세요!!");
+			return
+		}
+		frm.submit();
+	}
+</script>
+
+</head>
+<body>
+
+	<form action="../upload.do" method="post" enctype="multipart/form-data">
+		제목 : <input type="text" name="title"/><br/>
+		첨부 : <input type="file" name="image"/><br/>
+		<!-- this.form은 해당 form 객체 -->
+		<input type="button" value="업로드" onclick="send(this.form)"/>
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="ctx"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="ctx"/>
+			<item value="DAO"/>
+			<item value="DAP"/>
+			<item value="member3"/>
+			<item value="member"/>
+			<item value="member4"/>
+			<item value="pageCon"/>
+			<item value="cmd"/>
+			<item value="flower"/>
+			<item value="floweradmin"/>
+			<item value="load"/>
+			<item value="front"/>
+			<item value="Front"/>
+			<item value="usePoint"/>
+			<item value="inputPoint"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="joinForm"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="859"/>
+		<item key="DIALOG_Y_ORIGIN" value="315"/>
+		<item key="DIALOG_WIDTH" value="349"/>
+		<item key="DIALOG_HEIGHT" value="405"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;mysql-connector-java-8.0.29.jar&apos;&#x0A;- Original project: &apos;day10&apos;&#x0A;- Destination element: &apos;mysql-connector-java-8.0.29.jar&apos;&#x0A;- Original elements:&#x0A;     taglibs-standard-spec-1.2.5.jar&#x0A;     taglibs-standard-impl-1.2.5.jar&#x0A;     mysql-connector-j-8.0.31.jar" description="Copy files" element1="src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" element2="src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" element3="src/main/webapp/WEB-INF/lib/mysql-connector-j-8.0.31.jar" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668131066941" target="/day20_properties/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.29.jar" units="0" version="1.0"/>
+</session>

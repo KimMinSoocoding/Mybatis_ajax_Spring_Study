@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;validChk.js&apos; to &apos;js&apos;&#x0A;- Original project: &apos;day17_mvcQuiz (1)&apos;&#x0A;- Destination element: &apos;js&apos;&#x0A;- Original element: &apos;validChk.js&apos;" description="Copy file" element1="src/main/webapp/js/validChk.js" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1667545398296" target="/day19_shop/src/main/webapp/js" units="0" version="1.0"/>
+</session>

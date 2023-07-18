@@ -1,0 +1,10 @@
+package ez.web.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public interface ShopCommand {
+	
+	String (HttpServletRequest request, HttpServletResponse response)
+	
+}

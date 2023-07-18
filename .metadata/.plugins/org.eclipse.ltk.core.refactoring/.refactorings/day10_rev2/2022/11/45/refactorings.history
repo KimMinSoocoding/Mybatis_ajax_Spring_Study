@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;day19_shop/src/main/java/ez.web.model&apos;&#x0A;- Original project: &apos;day10_rev2&apos;&#x0A;- Destination element: &apos;day19_shop/src/main/java/ez.web.model&apos;&#x0A;- Original elements:&#x0A;     ez.web.model.MemberDAO.java&#x0A;     ez.web.model.MemberDTO.java" description="Copy compilation units" destination="=day19_shop/src\/main\/java&lt;ez.web.model" element1="/src\/main\/java&lt;ez.web.model{MemberDAO.java" element2="/src\/main\/java&lt;ez.web.model{MemberDTO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1667540008135" units="2" version="1.0"/>
+</session>

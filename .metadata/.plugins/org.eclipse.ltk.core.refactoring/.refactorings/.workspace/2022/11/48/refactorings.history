@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;day30_fileDownload&apos; to &apos;day30_fileDownload_idpwFind&apos;" description="Rename resource &apos;day30_fileDownload&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/day30_fileDownload" name="day30_fileDownload_idpwFind" stamp="1669164208079" updateReferences="true"/>
+</session>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+		auth = "Container"
+		driverClassName = "com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/sample"
+		username="testUser" password="1234"
+		name="jdbc_mysql"
+		type="javax.sql.DataSource"
+		maxTotal = "10"
+		maxWaitMillis="1000"
+	/>
+</Context>
+
+<!-- DBCP2 버전 
+		maxTotal = "10"
+		maxWaitMillis="1000"
+	DBCP1 버전
+		maxActive = "10"  
+		maxWait = "1000"
+-->

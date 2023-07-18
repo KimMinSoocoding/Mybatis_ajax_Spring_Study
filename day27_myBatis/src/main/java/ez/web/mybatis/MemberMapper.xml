@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="ez.web.mybatis.MemberMapper">
+  <select id="memberList" resultType="memberDTO">
+   SELECT * FROM member3;
+  </select>
+  
+  <insert id="memberInsert" parameterType="memberDTO">
+  INSERT INTO member3(id, pw, name, age, email, phone, zipcode, road_addr, jibun_addr, detail_addr)
+  values(#{id},#{pw},#{name},#{age},#{email},#{phone},#{zipcode},#{roadAddr},#{jibunAddr},#{detailAddr})
+  </insert>
+  
+  <delete id="delMember" parameterType="Integer">
+  	DELETE FROM member3 WHERE no = #{no}
+  </delete>
+  
+  <select id="memberInfo" parameterType="integer" resultType="memberDTO">
+  	SELECT * FROM member3 WHERE no = #{no}
+  </select>
+  
+  <update id="memberUpdate" parameterType="memberDTO">
+  UPDATE member3 SET age=#{age}, email=#{email}, phone=#{phone}, zipcode=#{zipcode}, road_addr=#{roadAddr}, jibun_addr#{jibunAddr}, detail_addr=#{detailAddr}
+	            WHERE no = #{no}
+  </update>
+  
+</mapper>

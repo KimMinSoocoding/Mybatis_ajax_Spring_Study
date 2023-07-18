@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h3 {
+	font-weight:bold;
+}
+
+h3>a{
+	text-decoration: none;
+	color:dogerblue;
+}
+
+nav.navbar{
+	background: crimson;
+}
+
+.nav-link {
+	color:#80ffff;
+}
+
+.nav-link:hover{
+	color:white;
+}
+
+.modal-dialog{
+	max-width:400px;
+}

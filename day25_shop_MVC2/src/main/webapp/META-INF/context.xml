@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+		auth="Container"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@msDB_high?TNS_ADMIN=/Users/minsoo/Desktop/Wallet_msDB"
+		username="ADMIN" password="6845Rlaalstn^^"
+		name="jdbc_oracle11g"
+		type="javax.sql.DataSource"
+		maxTotal="10"
+		maxWaitMillis="3000"
+	/>
+</Context>
+
+<!-- 
+	maxActive ==> maxTotal(DBCP2)  	: 커넥션 풀이 제공할 수 있는 커넥션 갯수
+	maxWait ==> maxWaitMillis		: 단위 1000분의 1초, 0보다 작을 경우 무한대기
+	
+	whenExhaustedAction : 커넥션이 없을 때 어떻게 동작할지를 설정
+	 ==> 0 : 에러발생, 1:maxWait에서 지정한 시간만큼 대기(기본값), 2: 일시적으로 커넥션을 새로 생성
+
+ -->

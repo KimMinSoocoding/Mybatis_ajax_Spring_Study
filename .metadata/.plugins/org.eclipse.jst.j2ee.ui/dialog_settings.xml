@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="J2EE_EXPORT_OVERWRITE" value="true"/>
+	<item key="J2EE_EXPORT_SOURCE" value="true"/>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v9.0"/>
+		<item value="NULL_RUNTIME"/>
+	</list>
+	<list key="J2EE_IMPORT_null">
+		<item value="/Users/minsoo/Downloads/shopping22.war"/>
+		<item value="/Users/minsoo/Downloads/day28_myBatis (3).war"/>
+		<item value="/Users/minsoo/Downloads/day30_fileDownload.war"/>
+		<item value="/Users/minsoo/Downloads/BBS_Template_by_ndb796.war"/>
+		<item value="/Users/minsoo/Downloads/day28_myBatis (2).war"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="/Users/minsoo/Downloads/Project.war"/>
+		<item value="/Users/minsoo/Desktop/Project.war"/>
+	</list>
+</section>

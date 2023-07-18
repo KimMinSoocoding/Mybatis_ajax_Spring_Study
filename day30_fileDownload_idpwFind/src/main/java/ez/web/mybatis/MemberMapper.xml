@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="ez.web.mybatis.MemberMapper">
+  <select id="memberList" resultType="memberDTO">
+    SELECT * FROM member4
+  </select>
+  
+  <insert id="memberInsert" parameterType="memberDTO">
+  INSERT INTO member4(id, pw, name, age, email, phone, zipcode, road_addr, jibun_addr, detail_addr, fileName) 
+  values(#{id},
+  		 #{pw},
+  		 #{name},
+  		 #{age},
+  		 #{email},
+  		 #{phone},
+  		 #{zipcode},
+  		 #{roadAddr},
+  		 #{jibunAddr},
+  		 #{detailAddr},
+  		 #{fileName})
+  </insert>
+  
+  <delete id="delMember" parameterType="Integer">
+  	DELETE FROM member4 WHERE no = #{no}
+  </delete>
+  
+  <select id="memberInfo" parameterType="Integer" resultType="memberDTO">
+  	SELECT * FROM member4 WHERE no = #{no}
+  </select>
+  
+  <update id="memberUpdate" parameterType="memberDTO">
+	  UPDATE member4 SET age=#{age}, email=#{email}, phone=#{phone}, zipcode=#{zipcode}, road_addr=#{roadAddr}, 
+	  jibun_addr=#{jibunAddr}, detail_addr=#{detailAddr} WHERE no=#{no}
+  </update>
+  
+  <update id="memberUpdateFile" parameterType="memberDTO">
+	  UPDATE member4 SET age=#{age}, email=#{email}, phone=#{phone}, zipcode=#{zipcode}, road_addr=#{roadAddr}, 
+	  jibun_addr=#{jibunAddr}, detail_addr=#{detailAddr}, fileName=#{fileName} WHERE no=#{no}
+  </update>
+  
+  <select id="memberLogin" parameterType="memberDTO" resultType="String">
+  	select name from member4 where id= #{id} and pw = #{pw}
+  </select>
+  
+  <select id="memberIdChk" parameterType="String" resultType="String">
+  	select id from member4 where id = #{id}
+  </select>
+  
+  <update id="memberDelFile" parameterType="Integer">
+  	update member4 set fileName='' where no=#{no}
+  </update>
+  
+  <select id="findId" parameterType="memberDTO" resultType="String">
+  	select id from member4 where name=#{name} and email =#{email}
+  </select>
+  
+  <select id="findPw" parameterType="memberDTO" resultType="String">
+  	select pw from member4 where name=#{name} and email =#{email} and id=#{id}
+  </select>
+</mapper>
+

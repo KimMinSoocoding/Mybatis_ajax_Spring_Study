@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>BoardFrontController</servlet-name>
+  	<servlet-class>ez.web.frontController.BoardFrontController</servlet-class>
+  	
+  	<!-- 서블릿 생성후 init()을 호출할 때 서블릿에 전달하는 파라미터(데이터)를 설정 
+  		param-name : 파라미터명, param-value: 파라미터명의 해당하는 데이터(값)
+  	-->
+  	<init-param>
+  		<param-name>configFile</param-name>
+  		<param-value>/WEB-INF/bbs.properties</param-value>
+  	</init-param>
+  	<!-- load-on-startup은 해당 서블릿의 요청이 없어도
+  		웹어플리케이션이 톰캣서버에 인식되는 시점에 적은 숫자부터 먼저 로딩한다.
+  		
+  		음의 정수인 경우에는 해당 서블릿의 요청이 있을 때 생성 초기화한다.
+  		0과 양의 정수인 경우에는 0에 가까울수록 먼저 서블릿을 생성 초기화한다. 
+  	 -->
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>BoardFrontController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+</web-app>
